@@ -1,18 +1,9 @@
-<<<<<<< HEAD
 ### *** Behzad Ghabaei ***
 ### *** CS 85 ***
 ### *** README.md ***
 ### *** Assignment 6 ***
 ### *** Instructor Seno ***
 ### *** 7/8/2026 ***
-=======
-*** Behzad Ghabaei ***
-*** CS 85 ***
-*** README.md ***
-*** Assignment 6 ***
-*** Instructor Seno ***
-*** 7/8/2026 ***
->>>>>>> e58bd3ae41ed0089070967a6240ab03d890656c8
 
 ### *** App Description ***
 When I launch Laravel Herd and point the web browser to the local project domain 
@@ -35,11 +26,7 @@ Start the Herd App. > inside the Herd folder create a directory cs85 > create a 
 ### Submit:
 ### 1. Your prompt used: "Write a simple PHP helper method inside a class that takes an array of numeric values representing daily workout durations, filters out any values that are zero or negative, and returns the average duration as a float."
 
-<<<<<<< HEAD
 ### 2. Raw AI output:
-=======
-2. Raw AI output:
->>>>>>> e58bd3ae41ed0089070967a6240ab03d890656c8
 '''
 <?php
 
@@ -59,15 +46,9 @@ class FitnessStats {
     }
 }
 '''
-<<<<<<< HEAD
 ### 3. Your critique: what worked, what didn't, any changes.
 
 ### ***What Worked:*** 
-=======
-3. Your critique: what worked, what didn't, any changes.
-
-***What Worked:*** 
->>>>>>> e58bd3ae41ed0089070967a6240ab03d890656c8
 The AI used native array utilities (array_filter and array_sum), which keeps the code clean and fast. It correctly included a guard clause (if (empty($validDurations))) to prevent a catastrophic "Division by Zero" fatal error if the input array only contained invalid data.
 
 ### ***What Didn't Work / Formatting Issues:*** 
