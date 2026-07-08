@@ -28,7 +28,7 @@ Start the Herd App. > inside the Herd folder create a directory cs85 > create a 
 
 ### 2. Raw AI output:
 
-```
+```php
 <?php
 
 namespace App\Helpers;
@@ -47,7 +47,7 @@ class FitnessStats {
     }
 }
 
-```php
+```
 ### 3. Your critique: what worked, what didn't, any changes.
 
 ### ***What Worked:*** 
