@@ -47,7 +47,7 @@ class FitnessStats {
     }
 }
 
-```
+```php
 ### 3. Your critique: what worked, what didn't, any changes.
 
 ### ***What Worked:*** 
