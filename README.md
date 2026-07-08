@@ -1,12 +1,11 @@
-<<<<<<< HEAD
-*** Behzad Ghabaei ***
-*** CS 85 ***
-*** README.md ***
-*** Assignment 6 ***
-*** Instructor Seno ***
-*** 7/8/2026 ***
+### *** Behzad Ghabaei ***
+### *** CS 85 ***
+### *** README.md ***
+### *** Assignment 6 ***
+### *** Instructor Seno ***
+### *** 7/8/2026 ***
 
-*** App Description ***
+### *** App Description ***
 When I launch Laravel Herd and point the web browser to the local project domain 
 http://cs85.test/module6a_mvc_project/public/index.php there will be will a clean dashboard layout.
 On entering data and submitting the form, this application will process the inputs and display the following structured result below. 
@@ -16,32 +15,19 @@ Duration: 30 minutes
 Intensity: High
 Estimated Burn: 360 Calories 
 
-*** Setup instructions ***
+### *** Setup instructions ***
 Start the Herd App. > inside the Herd folder create a directory cs85 > create a directory in cs85 > module6a_mvc_project > create 3 directories inside module6a_mvc_project called "src", "views" and "public" >  in the module6a_mvc_project directory run "composer init" >  "Welcome to the Composer config generator," type enter to all defaults and a composer.json file will be created. > open composer.json and change the psr-4 configuration to "App//": "src/" > this configures the psr-4 autoloading > next, generate the autoloader with the command "composer dump-autoload" > inside the src folder create two directories called Models and Controllers > inside of the Models folder create a file called "Workout.php" and build an object oriented program with a function. that calculates calories. > in the Controllers folder create WorkoutController.php > Controller intercepts user inputs, validates them, talks to the Model, and passes the resulting data off to the View. The View simply renders the HTML template. > build the namespace, use, handleRequest() function with filter_input, and the request method === post > inside the "views" folder create a document with HTML and style for the form of the app. > call this "workout_view.php" > The web server needs a unified entry point to trigger the autoloader and bootstrap the application. We will use public/index.php as our Front Controller. > in the "public" folder create a file called index.php > finally add a folder called Helpers in the src folder and paste or type the AI generated code called "FitnessStatus.php" > In conclusion, open a browser and navigate to http://cs85.test/module6a_mvc_project/public/index.php to see the Application.
 
-*** Reflection and AI critique ***
+### *** Reflection and AI critique ***
 
 ### AI Code Review and Critique
 ### Choose 1 function or method
 ### Use ChatGPT or similar to generate code
 ### Submit:
-1. Your prompt used: "Write a simple PHP helper method inside a class that takes an array of numeric values representing daily workout durations, filters out any values that are zero or negative, and returns the average duration as a float."
+### 1. Your prompt used: "Write a simple PHP helper method inside a class that takes an array of numeric values representing daily workout durations, filters out any values that are zero or negative, and returns the average duration as a float."
 
-2. Raw AI output:
-=======
-### Behzad Ghabaei
-### CS 85 - PHP programming
-### Module 6 Assignment 6A
-### MVC - Based PHP Application
-### README.md
-### Instructor Seno
-### 7/8/2026
-
-### Prompt Used
-### “Write a simple PHP helper method inside a class that takes an array of numeric values representing daily workout durations, filters out any values that are zero or negative, and returns the average duration as a float.”
-
-### The AI Output
->>>>>>> fea123a1a772260050656e4d976dd01fc6d96e0d
+### 2. Raw AI output:
+'''
 <?php
 
 namespace App\Helpers;
@@ -59,20 +45,19 @@ class FitnessStats {
         return array_sum($validDurations) / count($validDurations);
     }
 }
+'''
+### 3. Your critique: what worked, what didn't, any changes.
 
-<<<<<<< HEAD
-3. Your critique: what worked, what didn't, any changes.
-
-***What Worked:*** 
+### ***What Worked:*** 
 The AI used native array utilities (array_filter and array_sum), which keeps the code clean and fast. It correctly included a guard clause (if (empty($validDurations))) to prevent a catastrophic "Division by Zero" fatal error if the input array only contained invalid data.
 
-***What Didn't Work / Formatting Issues:*** 
+### ***What Didn't Work / Formatting Issues:*** 
 While functional, the code uses a verbose anonymous callback function inside array_filter.
 
-***Changes Made:***
+### ***Changes Made:***
  To modernize the code, I refactored the anonymous function into a cleaner PHP arrow function: fn($value) => $value > 0. This makes the code shorter and easier to parse visually.
 
-4. Reflection
+### 4. Reflection
 ### Write 300–500 words about:
 ### Why you chose your topic
 I chose to build a Personal Fitness Goal Tracker because tracking daily habits is a practical tool that fits perfectly into a modular programming lab.
@@ -89,32 +74,3 @@ This lab showed me the power of decoupling business tasks. In past assignments, 
 
 ### Your critique of the AI-generated code
 Analyzing the AI tool output was highly educational. The tool successfully caught a critical edge-case scenario: division by zero. However, it generated a slightly older style of PHP code block. Rewriting its callback array loop into a modern PHP arrow function taught me that while AI is great for fast boilerplate setups, a human engineer is still necessary to optimize, format, and fit the code neatly into an existing project architecture.
-=======
-### Critique
-### What Worked: The AI used native array utilities (array_filter and array_sum), which keeps the code clean and fast. It correctly included a guard clause (if (empty($validDurations))) to prevent a catastrophic "Division by Zero" fatal error if the input array only contained invalid data.
-### What Didn't Work / Formatting Issues: While functional, the code uses a verbose anonymous callback function inside array_filter.
-### Changes Made: To modernize the code, I refactored the anonymous function into a cleaner PHP arrow function: fn($value) => $value > 0. This makes the code shorter and easier to parse visually.
-### README.md
-### Why I chose this topic and what it does.
-### I chose to build a Personal Fitness Goal Tracker because tracking daily habits and exercise is a practical tool that fits perfectly into a modular programming lab.  The application tool that fits perfectly into a modular programming lab.  This application features a web form where a user can enter an activity name, the length of time they exercised, and select their physical fatigue level.  When submitted, the application processes the information to give the user a summary and calculates an estimate of how many calories are burned based on the intensity of the activity.
-
-### The hardest part of this project, and why.
-### This project was difficult at the beginning because I wasn’t sure where the directories belonged.  I remembered that my folder already had a public file from a previous project.  I had to start over and build a separate folder inside of Herd and place my code in a new public file that was not confusing the server. Also “view” inherits variables from the “controller” scope. The “require” statements execute inline variables instantiated in “WorkoutController.php” and are accessible in “workout_view.php”.  Writing view references variables like $workout, and they are not defined at the top of the file..The debugging on the relative directory path (__DIR__ . ‘/../../’) broke the file system.
-
-### What I leared about MVC
-### The lab shows me that decoupling tasks works well.   Database calls, HTML, and input validation code where mixed but keeping the code bite sized was much better.  Changing things from the program like how calories are calculated, is possible with the “Model.” If I want more submission form style, I can do that easily with the “view” folder.  Composer PSR-4 autoloader brings it all together, leaving “require_once” declarations behind. 
-
-### Critique of the AI-Generated Code
-### The AI tool was really interesting.  It can catch errors such as division - by - zero. I found the helper function to be nice and short, and easy to understand.   
-
-
-
-
-
-
-
-
-
-
-
->>>>>>> fea123a1a772260050656e4d976dd01fc6d96e0d
