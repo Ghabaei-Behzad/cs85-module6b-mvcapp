@@ -1,0 +1,15 @@
+{
+    "name": "behroozghabaei/module6a_mvc_project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Behzad Ghabaei",
+            "email": "Ghabaei_Behzad@student.smc.edu"
+        }
+    ],
+    "require": {}
+}
