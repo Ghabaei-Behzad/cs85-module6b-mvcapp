@@ -27,6 +27,7 @@ Start the Herd App. > inside the Herd folder create a directory cs85 > create a 
 1. Your prompt used: "Write a simple PHP helper method inside a class that takes an array of numeric values representing daily workout durations, filters out any values that are zero or negative, and returns the average duration as a float."
 
 2. Raw AI output:
+'''
 <?php
 
 namespace App\Helpers;
@@ -44,7 +45,7 @@ class FitnessStats {
         return array_sum($validDurations) / count($validDurations);
     }
 }
-
+'''
 3. Your critique: what worked, what didn't, any changes.
 
 ***What Worked:*** 
