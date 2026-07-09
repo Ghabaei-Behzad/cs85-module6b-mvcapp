@@ -78,13 +78,13 @@ and if desired, filter out all zero or negative numbers using an arrow function
         $averageDuration = FitnessStats::calculateAverageDuration($pastDurations);
 ```
 3. Next, display the calculated historical average inside your user interface. Inside of workout_view.php
-  
+  ```html
 <!-- Add this snippet inside your <div class="container"> right below the <h2> header -->
 <div style="background: #ebf5fb; border-left: 5px solid #3498db; padding: 10px; margin-bottom: 20px; border-radius: 4px;">
     📊 <strong>Your Historical Stats:</strong> <br>
     Your average workout duration is <strong><?= $averageDuration ?></strong> minutes.
 </div>
-
+```
 ### ***What Didn't Work / Formatting Issues:*** 
 The average displays a group of numbers however they are not provided by the user.  The array simply displays the average. The fit track work out log displays this message,
 
