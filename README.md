@@ -65,10 +65,10 @@ and if desired, filter out all zero or negative numbers using an arrow function
  A guard clause says, if the array is empty, stop early. This prevents dividing by zero.
  The final return statement says, add up all the valid numbers and divide by how many numbers there are.
  1. Update the WorkoutController.php file
- 2. ``` php
+  ``` php
   use App\Helpers\FitnessStats; // 1. Import your new helper class!
   ```
-3. paste this code befor the first if statement
+2. paste this code before the first if statement
 ``` php
  // Mock historical data: imagine these came from a database of past entries
         // Notice the negative number and zero: our helper will filter these out!
@@ -77,7 +77,7 @@ and if desired, filter out all zero or negative numbers using an arrow function
         // 2. Use the static helper method directly
         $averageDuration = FitnessStats::calculateAverageDuration($pastDurations);
 ```
-4. Next, display the calculated historical average inside your user interface. Inside of workout_view.php
+3. Next, display the calculated historical average inside your user interface. Inside of workout_view.php
    ```php
 <!-- Add this snippet inside your <div class="container"> right below the <h2> header -->
 <div style="background: #ebf5fb; border-left: 5px solid #3498db; padding: 10px; margin-bottom: 20px; border-radius: 4px;">
