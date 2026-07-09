@@ -1,9 +1,9 @@
-### *** Behzad Ghabaei ***
-### *** CS 85 ***
-### *** README.md ***
-### *** Assignment 6 ***
-### *** Instructor Seno ***
-### *** 7/8/2026 ***
+####  Behzad Ghabaei 
+####  CS 85 
+####  README.md 
+####  Assignment 6 
+####  Instructor Seno 
+####  7/8/2026 
 
 ### *** App Description ***
 When I launch Laravel Herd and point the web browser to the local project domain 
@@ -56,9 +56,40 @@ class FitnessStats {
 
 ### ***What Worked:*** 
 The AI used native array utilities (array_filter and array_sum), which keeps the code clean and fast. It correctly included a guard clause (if (empty($validDurations))) to prevent a catastrophic "Division by Zero" fatal error if the input array only contained invalid data.
+### In order to make this AI generated file work.
+First. A short description.  The namespace App\Helpers; tells PHP where this file lives in our structure, "static" means we don't have to create a "new FitnessStats()" object to use it,
+and if desired, filter out all zero or negative numbers using an arrow function
+ ``` php
+ $validDurations = array_filter($durations, fn($value) => $value > 0);
+```
+ A guard clause says, if the array is empty, stop early. This prevents dividing by zero.
+ The final return statement says, add up all the valid numbers and divide by how many numbers there are.
+ 1. Update the WorkoutController.php file
+ 2. ``` php
+  use App\Helpers\FitnessStats; // 1. Import your new helper class!
+  ```
+3. paste this code befor the first if statement
+``` php
+ // Mock historical data: imagine these came from a database of past entries
+        // Notice the negative number and zero: our helper will filter these out!
+        $pastDurations = [30, 45, 0, 60, -15, 20]; 
 
+        // 2. Use the static helper method directly
+        $averageDuration = FitnessStats::calculateAverageDuration($pastDurations);
+```
+4. Next, display the calculated historical average inside your user interface. Inside of workout_view.php
+   ```php
+<!-- Add this snippet inside your <div class="container"> right below the <h2> header -->
+<div style="background: #ebf5fb; border-left: 5px solid #3498db; padding: 10px; margin-bottom: 20px; border-radius: 4px;">
+    📊 <strong>Your Historical Stats:</strong> <br>
+    Your average workout duration is <strong><?= $averageDuration ?></strong> minutes.
+</div>
+ ```
 ### ***What Didn't Work / Formatting Issues:*** 
-While functional, the code uses a verbose anonymous callback function inside array_filter.
+The average displays a group of numbers however they are not provided by the user.  The array simply displays the average. The fit track work out log displays this message,
+📊 Your Historical Stats:
+Your average workout duration is 38.75 minutes. This was not as interesting as showiung the average of the input duration.
+Also, while functional, the code uses a verbose anonymous callback function inside array_filter.
 
 ### ***Changes Made:***
  To modernize the code, I refactored the anonymous function into a cleaner PHP arrow function: fn($value) => $value > 0. This makes the code shorter and easier to parse visually.
