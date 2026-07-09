@@ -17,7 +17,7 @@
 <body>
 
 <div class="container">
-    <h2>🏋️‍♂️ FitTrack: Log Your Workout</h2>
+    <h2>🏋️‍♂️ Fit Track: Log Your Workout</h2>
     
     <?php if (!empty($error)): ?>
         <div class="error"><?= $error ?></div>
