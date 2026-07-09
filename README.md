@@ -85,6 +85,9 @@ and if desired, filter out all zero or negative numbers using an arrow function
     Your average workout duration is <strong><?= $averageDuration ?></strong> minutes.
 </div>
 ```
+Here is a screenshot of how it would look:
+<img width="559" height="354" alt="Screenshot (1713)" src="https://github.com/user-attachments/assets/c0370c7f-93ff-4190-9337-602b290323cb" />
+
 ### ***What Didn't Work / Formatting Issues:*** 
 The average displays a group of numbers however they are not provided by the user.  The array simply displays the average. The fit track work out log displays this message,
 
