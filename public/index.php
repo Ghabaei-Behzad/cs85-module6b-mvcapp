@@ -1,6 +1,6 @@
 <?php
 
-// 1. Load the Composer Autoloader
+// 1. Load the Composer Autoloader, using a magic constant
 require_once __DIR__ . '/../vendor/autoload.php';
 
 // 2. Import your Controller using its namespace
