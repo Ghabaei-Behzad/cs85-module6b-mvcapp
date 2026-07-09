@@ -1,4 +1,12 @@
 <?php
+/*
+Behzad Ghabaei
+CS 85 PHP
+Module 6 Assign 6A
+MVC app
+Instructor Seno
+7/9/2026
+*/
 
 namespace App\Controllers;
 
@@ -25,7 +33,7 @@ class WorkoutController {
             }
         }
 
-        // Pass variables to the View
+        // Pass variables to the View, using the magic constant __DIR__
         // By requiring the view file, it inherits the local variables ($workout, $error)
         require __DIR__ . '/../../views/workout_view.php';
     }
