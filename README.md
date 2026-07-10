@@ -122,9 +122,9 @@ require_once `__DIR__` . '/../vendor/autoload.php';
 require_once `__DIR__` . '/composer/autoload_real.php';
 
 ### example uses located in vendor/composer/autoload_XXX.php
-### $vendorDir = dirname(`__DIR__`);
-### require `__DIR__` . '/ClassLoader.php';
-### 0 => `__DIR__` . '/../..' . '/src',
+ $vendorDir = dirname(`__DIR__`); <br>
+ require `__DIR__` . '/ClassLoader.php'; <br>
+ 0 => `__DIR__` . '/../..' . '/src', <br>
 
 
 
