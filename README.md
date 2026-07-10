@@ -112,16 +112,16 @@ This project was difficult at the beginning because I wasn’t sure where the di
 
 The most challenging part of this project was wrapping my brain around how the views inherit variables from the controller scope. Because require statements execute inline, variables instantiated in WorkoutController.php suddenly become accessible in workout_view.php. Initially, it felt counter-intuitive to write a view template that references variables like $workout without explicitly defining them at the top of the file. Debugging the relative directory nesting paths (`__DIR__` . '/../../') required some trial-and-error to ensure the file system didn't break. `__DIR__`: Resolves to the directory path of the file.  Magic constants are dynamic. Their values automatically resolve at compile time based entirely on where they are written in your code.  Here are some example uses.
 
-located in public/index.php
+### located in public/index.php
 require_once `__DIR__` . '/../vendor/autoload.php';
 
-located in src/Controllers/WorkoutController.php
+### located in src/Controllers/WorkoutController.php
  require `__DIR__` . '/../../views/workout_view.php';
 
-located in vendor/autoload.php
+### located in vendor/autoload.php
 require_once `__DIR__` . '/composer/autoload_real.php';
 
-example uses located in vendor/composer/autoload_XXX.php
+### example uses located in vendor/composer/autoload_XXX.php
 $vendorDir = dirname(`__DIR__`);
 require `__DIR__` . '/ClassLoader.php';
  0 => `__DIR__` . '/../..' . '/src',
