@@ -1,9 +1,9 @@
-####  Behzad Ghabaei 
-####  CS 85 
-####  README.md 
-####  Assignment 6 
-####  Instructor Seno 
-####  7/8/2026 
+Behzad Ghabaei <br>
+CS 85 <br>
+README.md <br>
+Assignment 6 <br>
+Instructor Seno <br>
+7/8/2026 <br>
 
 ### *** App Description ***
 When I launch Laravel Herd and point the web browser to the local project domain 
