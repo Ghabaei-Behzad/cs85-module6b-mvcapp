@@ -8,17 +8,17 @@
 ### *** App Description ***
 When I launch Laravel Herd and point the web browser to the local project domain 
 http://cs85.test/module6a_mvc_project/public/index.php there will be will a clean dashboard layout.
-On entering data and submitting the form, this application will process the inputs and display the following structured result below. 
-Fit Track Log Your Workout:
-Workout Activity: Running
-Duration (Minutes): 30 minutes
-Intensity Level: High
-this input will return the following,
-Summary Of Your Effort:
-Activity: Running
-Duration: 30 minutes
-Intensity: High
-Estimated Burn: 360 Calories 
+On entering data and submitting the form, this application will process the inputs and display the following structured result below. <br>
+Fit Track Log Your Workout: <br>
+Workout Activity: Running <br>
+Duration (Minutes): 30 minutes <br>
+Intensity Level: High <br>
+this input will return the following, <br>
+Summary Of Your Effort: <br>
+Activity: Running <br>
+Duration: 30 minutes <br>
+Intensity: High <br>
+Estimated Burn: 360 Calories <br>
 
 <img width="612" height="644" alt="Screenshot (1712)" src="https://github.com/user-attachments/assets/34b845d9-1832-4617-b1d1-027f68ada444" />
 
