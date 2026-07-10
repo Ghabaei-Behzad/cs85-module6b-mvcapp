@@ -28,11 +28,10 @@ Start the Herd App. > inside the Herd folder create a directory cs85 > create a 
 <img width="397" height="506" alt="Screenshot (1709)" src="https://github.com/user-attachments/assets/ad7d194f-cc62-4511-9345-895d2e991094" />
 
 ### *** Reflection and AI critique ***
-
-### AI Code Review and Critique
-### Choose 1 function or method
-### Use ChatGPT or similar to generate code
-### Submit:
+AI Code Review and Critique <br>
+Choose 1 function or method <br>
+Use ChatGPT or similar to generate code <br>
+Submit: <br>
 ### 1. Your prompt used: "Write a simple PHP helper method inside a class that takes an array of numeric values representing daily workout durations, filters out any values that are zero or negative, and returns the average duration as a float."
 
 ### 2. Raw AI output:
